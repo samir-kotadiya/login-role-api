@@ -1,7 +1,8 @@
 ### Prerequisite
-
+```
 node: v16.13.2
 psql (PostgreSQL) 14.0
+```
 
 ### Project Setup
 Once you clone or download project go into you folder
@@ -57,9 +58,11 @@ run `npm start`
 >here attached link of postman collection you can download and check in local
 >https://www.getpostman.com/collections/78abe5acb9db828059ed
 
+```
 Set postman env global variable
 HOST_API: http://localhost:3000
 AUTH_TOKEN: genrated token
+```
 
 ### Login
 ```
