@@ -1,0 +1,10 @@
+/node_modules
+/logs
+/.env
+/public/*
+!/public/index.html
+!/public/temp
+/public/temp/*
+!/public/temp/index.html
+!/public/uploads
+/public/uploads/*
