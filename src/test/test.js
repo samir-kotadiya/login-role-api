@@ -6,190 +6,96 @@ import app from '../index';
 chai.use(chatHttp);
 const { expect } = chai;
 
-describe('Testing the book endpoints:', () => {
-  it('It should create a book', (done) => {
-    const book = {
-      title: 'First Awesome book',
-      price: '$9.99',
-      description: 'This is the awesome book'
+describe('Testing the login/logout endpoints:', () => {
+  it('It should login with email and password', (done) => {
+    const payload = {
+      email: 'samir@gmail.com',
+      password: '123456'
     };
     chai.request(app)
-      .post('/api/v1/books')
+      .post('/v1/user/login')
       .set('Accept', 'application/json')
-      .send(book)
+      .send(payload)
       .end((err, res) => {
-        expect(res.status).to.equal(201);
+        expect(res.status).to.equal(200);
         expect(res.body.data).to.include({
-          id: 1,
-          title: book.title,
-          price: book.price,
-          description: book.description
+          "statusCode": 200,
+          "type": "success",
+          "message": "OK",
+          "data": {
+            "status": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM0NTYzODlhLTYwNDMtNDI4Zi04MTU4LTMzMDBiNDcyZjk2MSIsImlhdCI6MTY0NDA2NTY2M30.STfvi8WbjfHHjie8kNqYKlAffXPbUEzjeDlgHkHXL5I"
+          }
         });
         done();
       });
   });
 
-  it('It should not create a book with incomplete parameters', (done) => {
-    const book = {
-      price: '$9.99',
-      description: 'This is the awesome book'
+  it('It should return 400 incase of invalid login', (done) => {
+    const payload = {
+      email: 'samir@gmail.com-invalid',
+      password: '123456'
     };
     chai.request(app)
-      .post('/api/v1/books')
+      .post('/v1/user/login')
       .set('Accept', 'application/json')
-      .send(book)
+      .send(payload)
       .end((err, res) => {
         expect(res.status).to.equal(400);
+        expect(res.body.data).to.include({
+          "statusCode": 400,
+          "type": "success",
+          "action": "Failed",
+          "message": "email not exits"
+        });
         done();
       });
   });
 
-  it('It should get all books', (done) => {
+  it('It should logout successfullt when valid token is passed', (done) => {
     chai.request(app)
-      .get('/api/v1/books')
+      .get('/v1/user/logout')
       .set('Accept', 'application/json')
+      .set('authorization', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM0NTYzODlhLTYwNDMtNDI4Zi04MTU4LTMzMDBiNDcyZjk2MSIsImlhdCI6MTY0NDA2NTY2M30.STfvi8WbjfHHjie8kNqYKlAffXPbUEzjeDlgHkHXL5I')
       .end((err, res) => {
         expect(res.status).to.equal(200);
-        res.body.data[0].should.have.property('id');
-        res.body.data[0].should.have.property('title');
-        res.body.data[0].should.have.property('price');
-        res.body.data[0].should.have.property('description');
+        res.body.data.should.have.property('status');
         done();
       });
   });
 
-  it('It should get a particular book', (done) => {
-    const bookId = 1;
+  it('It should logout 401 when in valid token is passed', (done) => {
     chai.request(app)
-      .get(`/api/v1/books/${bookId}`)
+      .get('/v1/user/logout')
       .set('Accept', 'application/json')
+      .set('authorization', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM0NTYzODlhLTYwNDMtNDI4Zi04MTU4LTMzMDBiNDcyZjk2MSIsImlhdCI6MTY0NDA2NTY2M30.STfvi8WbjfHHjie8kNqYKlAffXPbUEzjeDlgHkHXL5I')
       .end((err, res) => {
-        expect(res.status).to.equal(200);
-        res.body.data.should.have.property('id');
-        res.body.data.should.have.property('title');
-        res.body.data.should.have.property('price');
-        res.body.data.should.have.property('description');
+        expect(res.status).to.equal(401);
+        res.body.data.should.have.property('statusCode');
+        expect(res.body.data).to.be('401');
+        expect(res.body.data).message.be('Token expired');
         done();
       });
   });
 
-  it('It should not get a particular book with invalid id', (done) => {
-    const bookId = 8888;
-    chai.request(app)
-      .get(`/api/v1/books/${bookId}`)
-      .set('Accept', 'application/json')
-      .end((err, res) => {
-        expect(res.status).to.equal(404);
-        res.body.should.have.property('message').eql(`Cannot find book with the id ${bookId}`);
-        done();
-      });
-  });
-
-  it('It should not get a particular book with non-numeric id', (done) => {
-    const bookId = 'aaa';
-    chai.request(app)
-      .get(`/api/v1/books/${bookId}`)
-      .set('Accept', 'application/json')
-      .end((err, res) => {
-        expect(res.status).to.equal(400);
-        res.body.should.have.property('message').eql('Please input a valid numeric value');
-        done();
-      });
-  });
-
-  it('It should update a book', (done) => {
-    const bookId = 1;
-    const updatedBook = {
-      id: bookId,
-      title: 'Updated Awesome book',
-      price: '$10.99',
-      description: 'We have updated the price'
+  it('It should register success when valid paylod given', (done) => {
+    const payload = {
+      "role": "admin",
+      "name": "samir admin",
+      "email": "admin@gmail.com",
+      "phone": "8511494795",
+      "password": "admin@user",
+      "confirmPassword": "admin@user"
     };
     chai.request(app)
-      .put(`/api/v1/books/${bookId}`)
+      .post(`/api/v1/books/${bookId}`)
       .set('Accept', 'application/json')
-      .send(updatedBook)
+      .set('authorization', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM0NTYzODlhLTYwNDMtNDI4Zi04MTU4LTMzMDBiNDcyZjk2MSIsImlhdCI6MTY0NDA2NTY2M30.STfvi8WbjfHHjie8kNqYKlAffXPbUEzjeDlgHkHXL5I')
+      .send(payload)
       .end((err, res) => {
         expect(res.status).to.equal(200);
-        expect(res.body.data.id).equal(updatedBook.id);
-        expect(res.body.data.title).equal(updatedBook.title);
-        expect(res.body.data.price).equal(updatedBook.price);
-        expect(res.body.data.description).equal(updatedBook.description);
-        done();
-      });
-  });
-
-  it('It should not update a book with invalid id', (done) => {
-    const bookId = '9999';
-    const updatedBook = {
-      id: bookId,
-      title: 'Updated Awesome book again',
-      price: '$11.99',
-      description: 'We have updated the price'
-    };
-    chai.request(app)
-      .put(`/api/v1/books/${bookId}`)
-      .set('Accept', 'application/json')
-      .send(updatedBook)
-      .end((err, res) => {
-        expect(res.status).to.equal(404);
-        res.body.should.have.property('message').eql(`Cannot find book with the id: ${bookId}`);
-        done();
-      });
-  });
-
-  it('It should not update a book with non-numeric id value', (done) => {
-    const bookId = 'ggg';
-    const updatedBook = {
-      id: bookId,
-      title: 'Updated Awesome book again',
-      price: '$11.99',
-      description: 'We have updated the price'
-    };
-    chai.request(app)
-      .put(`/api/v1/books/${bookId}`)
-      .set('Accept', 'application/json')
-      .send(updatedBook)
-      .end((err, res) => {
-        expect(res.status).to.equal(400);
-        res.body.should.have.property('message').eql('Please input a valid numeric value');
-        done();
-      });
-  });
-
-
-  it('It should delete a book', (done) => {
-    const bookId = 1;
-    chai.request(app)
-      .delete(`/api/v1/books/${bookId}`)
-      .set('Accept', 'application/json')
-      .end((err, res) => {
-        expect(res.status).to.equal(200);
-        expect(res.body.data).to.include({});
-        done();
-      });
-  });
-
-  it('It should not delete a book with invalid id', (done) => {
-    const bookId = 777;
-    chai.request(app)
-      .delete(`/api/v1/books/${bookId}`)
-      .set('Accept', 'application/json')
-      .end((err, res) => {
-        expect(res.status).to.equal(404);
-        res.body.should.have.property('message').eql(`Book with the id ${bookId} cannot be found`);
-        done();
-      });
-  });
-
-  it('It should not delete a book with non-numeric id', (done) => {
-    const bookId = 'bbb';
-    chai.request(app)
-      .delete(`/api/v1/books/${bookId}`)
-      .set('Accept', 'application/json')
-      .end((err, res) => {
-        expect(res.status).to.equal(400);
-        res.body.should.have.property('message').eql('Please provide a numeric value');
+        res.body.data.should.have.property('requestId');
+        expect(res.body.data).message.be('OK');
         done();
       });
   });
