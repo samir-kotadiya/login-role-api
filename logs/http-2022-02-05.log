@@ -1,0 +1,192 @@
+info: ::1 - - [Sat, 05 Feb 2022 10:11:24 GMT] "POST /v1/user/login HTTP/1.1" 200 248 2361.681 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T10:11:24.814Z"}
+info: ::1 - - [Sat, 05 Feb 2022 12:54:23 GMT] "POST /v1/user/login HTTP/1.1" 200 248 144.977 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T12:54:23.759Z"}
+info: ::1 - - [Sat, 05 Feb 2022 12:57:56 GMT] "POST /v1/user/register HTTP/1.1" 400 91 8.821 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T12:57:56.833Z"}
+info: ::1 - - [Sat, 05 Feb 2022 12:58:02 GMT] "POST /v1/user/register HTTP/1.1" 200 117 133.972 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T12:58:02.061Z"}
+info: ::1 - - [Sat, 05 Feb 2022 12:58:13 GMT] "POST /v1/user/verifyUser HTTP/1.1" 400 77 11.149 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T12:58:13.821Z"}
+info: ::1 - - [Sat, 05 Feb 2022 12:58:29 GMT] "POST /v1/user/verifyUser HTTP/1.1" 200 73 42.825 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T12:58:29.276Z"}
+info: ::1 - - [Sat, 05 Feb 2022 12:58:30 GMT] "POST /v1/user/verifyUser HTTP/1.1" 400 78 2.360 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T12:58:30.306Z"}
+info: ::1 - - [Sat, 05 Feb 2022 12:58:49 GMT] "POST /v1/user/login HTTP/1.1" 200 248 76.056 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T12:58:49.082Z"}
+info: ::1 - - [Sat, 05 Feb 2022 12:58:57 GMT] "GET /v1/user/me HTTP/1.1" 200 278 4.365 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T12:58:57.394Z"}
+info: ::1 - - [Sat, 05 Feb 2022 12:58:58 GMT] "GET /v1/user/me HTTP/1.1" 200 278 4.272 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T12:58:58.639Z"}
+info: ::1 - - [Sat, 05 Feb 2022 12:59:02 GMT] "GET /v1/user?page=1 HTTP/1.1" 200 773 12.574 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T12:59:02.922Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:00:34 GMT] "GET /v1/user/me HTTP/1.1" 200 278 12.797 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:00:34.597Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:00:43 GMT] "GET /v1/user/me HTTP/1.1" 200 278 3.859 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:00:43.205Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:00:54 GMT] "PUT /v1/user/me HTTP/1.1" 200 73 103.457 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:00:54.793Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:01:03 GMT] "PUT /v1/user/me HTTP/1.1" 400 68 3.590 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:01:03.171Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:01:23 GMT] "GET /v1/user/me HTTP/1.1" 200 313 12.782 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:01:23.260Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:01:35 GMT] "PUT /v1/user/me HTTP/1.1" 200 73 89.467 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:01:35.124Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:01:38 GMT] "GET /v1/user/me HTTP/1.1" 200 316 2.953 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:01:38.712Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:01:44 GMT] "PUT /v1/user/me HTTP/1.1" 200 73 80.018 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:01:44.479Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:01:49 GMT] "PUT /v1/user/me HTTP/1.1" 200 73 84.969 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:01:49.041Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:04:40 GMT] "PUT /v1/user/me HTTP/1.1" 400 90 27.107 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:04:40.973Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:06:50 GMT] "PUT /v1/user/me HTTP/1.1" 200 73 137.452 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:06:50.937Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:07:03 GMT] "POST /v1/user/login HTTP/1.1" 400 79 2.320 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:07:03.106Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:07:39 GMT] "POST /v1/user/login HTTP/1.1" 200 248 82.034 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:07:39.274Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:07:56 GMT] "PUT /v1/user/me HTTP/1.1" 400 90 13.473 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:07:56.069Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:07:59 GMT] "PUT /v1/user/me HTTP/1.1" 200 73 117.833 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:07:59.435Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:08:01 GMT] "POST /v1/user/login HTTP/1.1" 400 82 69.272 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:08:01.987Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:08:05 GMT] "POST /v1/user/login HTTP/1.1" 200 248 80.606 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:08:05.325Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:08:19 GMT] "POST /v1/user/login HTTP/1.1" 400 82 77.230 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:08:19.916Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:08:30 GMT] "PUT /v1/user/me HTTP/1.1" 200 73 85.998 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:08:30.799Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:09:12 GMT] "DELETE /v1/user/tt HTTP/1.1" 404 34 8.020 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:09:12.024Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:09:31 GMT] "DELETE /v1/user/tt HTTP/1.1" 500 88 53.125 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:09:31.685Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:09:38 GMT] "GET /v1/user?page=1 HTTP/1.1" 200 811 15.307 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:09:38.045Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:09:56 GMT] "DELETE /v1/user/d00eb1a8-cd8a-4d4e-a3eb-b7fb9f1c897e HTTP/1.1" 200 73 72.499 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:09:56.639Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:09:57 GMT] "DELETE /v1/user/d00eb1a8-cd8a-4d4e-a3eb-b7fb9f1c897e HTTP/1.1" 400 80 4.753 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:09:57.594Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:10:00 GMT] "GET /v1/user?page=1 HTTP/1.1" 200 589 9.929 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:10:00.627Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:10:39 GMT] "POST /v1/user/login HTTP/1.1" 200 248 101.389 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:10:39.313Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:10:47 GMT] "POST /v1/user/login HTTP/1.1" 200 248 75.429 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:10:47.038Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:16:06 GMT] "GET /v1/user/login HTTP/1.1" 404 34 20.592 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:16:06.816Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:16:14 GMT] "GET /v1/user/logout HTTP/1.1" 200 248 99.035 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:16:14.908Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:30:20 GMT] "GET /v1/user/logout HTTP/1.1" 500 101 175.680 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:30:20.798Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:30:49 GMT] "GET /v1/user/logout HTTP/1.1" 500 101 8.770 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:30:49.067Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:30:53 GMT] "GET /v1/user/logout HTTP/1.1" 500 101 44.960 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:30:53.872Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:31:38 GMT] "GET /v1/user/logout HTTP/1.1" 500 101 35.496 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:31:38.127Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:34:02 GMT] "POST /v1/user/login HTTP/1.1" 500 100 106.855 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:34:02.364Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:34:25 GMT] "POST /v1/user/login HTTP/1.1" 200 248 143.174 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:34:25.032Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:35:22 GMT] "GET /v1/user/logout HTTP/1.1" 500 101 18.975 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:35:22.514Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:35:39 GMT] "POST /v1/user/login HTTP/1.1" 200 248 107.303 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:35:39.281Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:35:43 GMT] "GET /v1/user/logout HTTP/1.1" 500 101 6.223 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:35:43.446Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:38:10 GMT] "GET /v1/user/logout HTTP/1.1" 401 59 23.777 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:38:10.645Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:39:24 GMT] "GET /v1/user/logout HTTP/1.1" 500 101 24.664 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:39:24.464Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:40:11 GMT] "GET /v1/user/logout HTTP/1.1" 500 101 42.912 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:40:11.927Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:41:28 GMT] "GET /v1/user/logout HTTP/1.1" 500 101 36.617 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:41:28.496Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:42:50 GMT] "GET /v1/user/logout HTTP/1.1" 401 59 25.466 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:42:50.953Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:44:29 GMT] "POST /v1/user/login HTTP/1.1" 200 248 126.784 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:44:29.666Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:44:32 GMT] "GET /v1/user/logout HTTP/1.1" 500 101 17.565 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:44:32.565Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:44:48 GMT] "GET /v1/user/logout HTTP/1.1" 500 101 12.448 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:44:48.527Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:45:14 GMT] "GET /v1/user/logout HTTP/1.1" 401 59 11.290 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:45:14.707Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:46:46 GMT] "GET /v1/user/logout HTTP/1.1" 401 59 27.463 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:46:46.965Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:46:47 GMT] "GET /v1/user/logout HTTP/1.1" 401 59 4.754 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:46:47.804Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:46:48 GMT] "GET /v1/user/logout HTTP/1.1" 401 59 7.683 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:46:48.530Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:46:49 GMT] "GET /v1/user/logout HTTP/1.1" 401 59 2.603 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:46:49.137Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:46:51 GMT] "POST /v1/user/login HTTP/1.1" 200 248 103.185 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:46:51.247Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:47:00 GMT] "GET /v1/user/logout HTTP/1.1" 200 389 10.122 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:47:00.748Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:47:18 GMT] "GET /v1/user/logout HTTP/1.1" 401 59 9.611 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:47:18.258Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:49:11 GMT] "GET /v1/user/logout HTTP/1.1" 401 59 45.523 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:49:11.257Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:49:15 GMT] "POST /v1/user/login HTTP/1.1" 200 248 126.932 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:49:15.691Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:49:19 GMT] "GET /v1/user/logout HTTP/1.1" 401 59 4.455 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:49:19.410Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:49:43 GMT] "GET /v1/user/me HTTP/1.1" 200 278 16.109 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:49:43.391Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:49:44 GMT] "GET /v1/user/me HTTP/1.1" 200 278 4.232 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:49:44.204Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:49:46 GMT] "GET /v1/user/logout HTTP/1.1" 200 389 13.898 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:49:46.609Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:49:48 GMT] "GET /v1/user/me HTTP/1.1" 401 59 2.393 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:49:48.690Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:49:51 GMT] "GET /v1/user/logout HTTP/1.1" 401 59 2.342 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:49:51.809Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:49:59 GMT] "POST /v1/user/login HTTP/1.1" 200 248 170.628 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:49:59.762Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:50:16 GMT] "GET /v1/user/me HTTP/1.1" 200 278 18.333 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:50:16.275Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:50:17 GMT] "GET /v1/user?page=1 HTTP/1.1" 200 551 8.029 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:50:17.795Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:50:24 GMT] "GET /v1/resource/public/all?page=1 HTTP/1.1" 200 240 7.032 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:50:24.802Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:50:29 GMT] "GET /v1/resource/only-admin/all?page=1 HTTP/1.1" 200 362 8.674 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:50:29.885Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:50:37 GMT] "GET /v1/resource/private/all?page=1 HTTP/1.1" 200 179 7.507 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:50:37.050Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:50:42 GMT] "GET /v1/resource/private/4bb578ba-2eb6-4bd5-9b36-ff7b6300a57b HTTP/1.1" 400 84 6.232 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:50:42.769Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:50:55 GMT] "GET /v1/resource/private/5f455865-7ff0-4da5-908c-7beb3dae688e HTTP/1.1" 200 133 8.204 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:50:55.072Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:51:15 GMT] "PUT /v1/resource/private/5f455865-7ff0-4da5-908c-7beb3dae688e HTTP/1.1" 400 96 13.685 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:51:15.699Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:51:22 GMT] "PUT /v1/resource/private/5f455865-7ff0-4da5-908c-7beb3dae688e HTTP/1.1" 200 132 29.007 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:51:22.030Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:51:30 GMT] "PUT /v1/resource/private/5f455865-7ff0-4da5-908c-7beb3dae688e HTTP/1.1" 200 131 50.499 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:51:30.281Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:51:44 GMT] "PUT /v1/user/me HTTP/1.1" 200 73 85.871 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:51:44.020Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:51:52 GMT] "GET /v1/resource/only-admin/all?page=1 HTTP/1.1" 403 55 3.990 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:51:52.896Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:52:50 GMT] "GET /v1/resource/public/all?page=1 HTTP/1.1" 200 240 22.820 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:52:50.267Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:56:33 GMT] "GET /v1/resource/only-admin/all?page=1 HTTP/1.1" 403 55 49.412 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:56:33.325Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:56:49 GMT] "PUT /v1/user/me HTTP/1.1" 200 73 115.175 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:56:49.448Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:56:51 GMT] "GET /v1/resource/only-admin/all?page=1 HTTP/1.1" 200 360 12.529 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:56:51.795Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:57:21 GMT] "POST /v1/user/login HTTP/1.1" 400 81 9.756 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:57:21.126Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:57:50 GMT] "PUT /v1/user/me HTTP/1.1" 200 73 91.962 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:57:50.072Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:57:51 GMT] "GET /v1/resource/only-admin/all?page=1 HTTP/1.1" 403 55 2.559 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:57:51.892Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:58:11 GMT] "GET /v1/user/logout HTTP/1.1" 200 389 16.963 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:58:11.124Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:58:12 GMT] "GET /v1/user/logout HTTP/1.1" 401 59 3.556 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:58:12.245Z"}
+info: ::1 - - [Sat, 05 Feb 2022 13:58:26 GMT] "GET /v1/resource/private/5f455865-7ff0-4da5-908c-7beb3dae688e HTTP/1.1" 401 59 6.107 ms "-" "PostmanRuntime/7.29.0"
+ {"timestamp":"2022-02-05T13:58:26.008Z"}
