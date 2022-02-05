@@ -88,7 +88,7 @@ describe('Testing the login/logout endpoints:', () => {
       "confirmPassword": "admin@user"
     };
     chai.request(app)
-      .post(`/api/v1/books/${bookId}`)
+      .post(`v1/user/register`)
       .set('Accept', 'application/json')
       .set('authorization', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM0NTYzODlhLTYwNDMtNDI4Zi04MTU4LTMzMDBiNDcyZjk2MSIsImlhdCI6MTY0NDA2NTY2M30.STfvi8WbjfHHjie8kNqYKlAffXPbUEzjeDlgHkHXL5I')
       .send(payload)
