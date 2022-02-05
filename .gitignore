@@ -1,6 +1,5 @@
 /node_modules
 /logs
-/.env
 /public/*
 !/public/index.html
 !/public/temp
